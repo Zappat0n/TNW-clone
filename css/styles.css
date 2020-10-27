@@ -73,6 +73,10 @@ header .bottom-nav-bar {
   font-size: 14px;
 }
 
+header .bottom-nav-bar .right-side {
+  height: 3rem;
+}
+
 header .bottom-nav-bar ul li{
   font-family: "shendox", sans-serif;
   font-size: 14px;
@@ -83,9 +87,20 @@ header li a {
   text-decoration: none;
 }
 
-header img {
+header .hidden {
   display: none;
   background-color: black;
 }
 
+/*  TOP SECTION */
 
+section .top-section {
+
+}
+article .top-section .left-side {
+  float: left;
+}
+article .top-section .right-side {
+  width: 100px;
+  float: left;
+}
