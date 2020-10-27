@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "maquette";
+  src: url("assets/fonts/ars-maquette-bold-alt.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "maquette";
+  src: url("assets/fonts/ars-maquette-regular.woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "avalon";
+  src: url("assets/fonts/avalon-bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "imperial";
+  src: url("assets/fonts/imperial-normal-700.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "shentox";
+  src: url("assets/fonts/shentox-medium.woff2");
+  font-weight: 500;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 1152px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+
+header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+header .nav-bar li {
+  display: inline;
+  list-style: none;
+  margin-right: 5px;
+}
+
+header .top-nav-bar{
+  background-color: black;
+  height: 2rem;
+}
+
+header .top-nav-bar ul li{
+  font-family: "maquette", sans-serif;
+  font-size: 13px;
+}
+
+header .bottom-nav-bar {
+  background-color: white;
+  height: 3rem;
+  font-family: "shentox", sans-serif;
+  font-size: 14px;
+}
+
+header .bottom-nav-bar ul li{
+  font-family: "shendox", sans-serif;
+  font-size: 14px;
+}
+
+header li a {
+  color: gray;
+  text-decoration: none;
+}
+
+header img {
+  display: none;
+  background-color: black;
+}
+
+
