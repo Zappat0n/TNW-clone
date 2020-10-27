@@ -94,9 +94,7 @@ header .hidden {
 
 /*  TOP SECTION */
 
-section .top-section {
-
-}
+/*
 article .top-section .left-side {
   float: left;
 }
@@ -104,3 +102,71 @@ article .top-section .right-side {
   width: 100px;
   float: left;
 }
+*/
+.top-section {
+  display: flex;
+}
+
+/*
+.top-section .left-side, .top-section .right-side {
+  float: left;
+}
+*/
+
+.top-section .left-side {
+  margin: 0.25%;
+  width: 58%;
+}
+.top-section .right-side {
+  margin: 0.25%;
+  width: 38%;
+}
+.right-side .rigth {
+  margin-bottom: 0.5%;
+}
+
+.top-section .left-side img {
+  width: 100%;
+}
+
+/*
+.top-section .right {
+  display: block;
+
+  position: relative;
+  float: right;
+}
+*/
+.top-section .top-image, .top-section .bottom-image {
+  width: 100%;
+}
+
+/*  LATEST NEWS */
+
+.latest-news h2 {
+  margin-bottom: 2rem;
+}
+
+.latest-news h2 a {
+  font-family: "avalon",sans-serif; 
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.latest-news .news-card {
+  width: 270px;
+}
+
+.latest-news .news-card figcaption{
+  font-family: "maquette",sans-serif; 
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.latest-news .news-card img{
+  width: 270px;
+}
+
