@@ -1,3 +1,102 @@
+/* this is new-branch style.css */
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*<!-- HEADER SECTION -->*/
+
+header {
+  background-color: #fff;
+  height: 46px;
+  position: relative;
+}
+
+.mob-right img {
+  position: absolute;
+  padding: 5px 8px;
+  border-left: 1px solid rgb(235, 235, 235);
+}
+
+.mob-right .mob-menu {
+  top: 0;
+  right:0;
+}
+
+.mob-right .search-icon {
+  top: -6px;
+  right: 52px;
+}
+
+/* <!-- MAIN SECTION -->*/
+.main-section {
+  max-width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template: repeat(3,1fr) / 1fr;
+  grid-gap: 5px;
+}
+
+.main-art {
+  width: 100vw;
+  position: relative;
+}
+
+.main-art h3 a,.main-art small {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  font-size: 120%;
+  color: white;
+  z-index: 100;
+}
+
+.main-art small {
+  color: lightslategray;
+  bottom: 20px;
+  font-size: 100%;
+}
+
+
+.cover-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.cover-a{
+  background: rgba(0,0,0,.25) url('assets/imgs/image-gradient.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.co-img1 {
+  background-image: url('assets/imgs/main-img1.png');
+}
+
+.co-img2 {
+  background-image: url('assets/imgs/main-img2.png');
+}
+
+.co-img3 {
+  background-image: url('assets/imgs/main-img3.png');
+}
+
