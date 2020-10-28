@@ -112,7 +112,8 @@ header {
 
 /*  <!-- LATEST NEWS SECTION --> */
 
-#latest-news {
+#latest-news ,
+#latest-deals{
   background-color: white;
   padding: 8px;
 
@@ -123,13 +124,15 @@ header {
   
 }
 
-.latest-art{
+.latest-art ,
+.latest-deal {
   height: 90px;
   padding: 8px;
   margin-bottom: 10px;
 }
 
-.latest-div {
+.latest-div ,
+.latest-deal-div {
   width: 80px;
   height: 80px;
   position: relative;
@@ -137,7 +140,8 @@ header {
   float: left;
 }
 
-.latest-img {
+.latest-img ,
+.latest-deal-img {
   height: 100%;
   position: absolute;
   left: -50%;
@@ -147,11 +151,13 @@ header {
   left:0;
 }
 
-.latest-caption {
+.latest-caption ,
+.latest-deal-caption {
   padding: 10px 0 0 100px;
 }
 
-.latest-caption a:hover {
+.latest-caption a:hover ,
+.latest-deal-caption a:hover{
   color: #ff451f;
   text-decoration: underline;
 }
@@ -205,6 +211,7 @@ header {
 .latest-funding .middle {
   display: flex;
   flex-direction: column;
+  background-color: #FFFAF8;
   font-size: 12px;
   padding: 16px;
   line-height: 21px;
@@ -216,6 +223,7 @@ header {
 }
 
 .latest-funding .bottom{
+  background-color: #FFFAF8;
   font-size: 12px;
   padding: 16px;
 }
@@ -224,20 +232,25 @@ header {
 /*  <!-- TOPICS SECTION --> */
 
 #topics {
-  width: 100%;
-  
+  padding: 15px;
+  background-color: white;
+}
+
+.topic-card {
+  height: 300px;
+  margin-bottom: 445px;
 }
 
 #topics .top-image {
   position: relative;
-  border: 5px blue;
   width: 100%;
-  height: 384px;
+  height: 100%;
+  
 }
 
 #topics .background{
   position: absolute;
-  background-image: url("assets/imgs/main-img1.png");
+  background: url("assets/imgs/main-img1.png");
   background-size: cover;
   background-position: 50%;
   width: 100%;
@@ -245,19 +258,92 @@ header {
 }
 
 #topics .top-image .caption{
-  color: white;
-  position: relative;
-  top: 280px;
-  left: 40px;
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+
 }
 
 #topics .top-image .caption a{
   color: white;
 }
 
+#topics .top-image .caption small {
+  color: gray;
+}
+
+#topics .latest {
+  display: flex;
+  background-color: #FFF4F2 ;
+  height: 100px;
+}
+
+#topics .latest .left-side {
+  padding: 15px;
+  color: #ff451f;
+}
+
+#topics .latest .left-side a:hover{
+  text-decoration: underline;
+  text-decoration-color: #ff451f;
+}
+
+#topics .latest .left-side strong{
+  color: #ff451f;
+}
+
 #topics .latest img {
+
   float: right;
   width: 96px;
   height: 96px;
+}
+
+.topic-card ul {
+  font-size: 100%;
+  list-style: none; 
+}
+
+.topic-card ul a {
+  color: rgb(124, 124, 124);
+}
+.topic-card ul a:hover{
+  color: #000;
+}
+.topic-card ul a:visited {
+  color: rgb(189, 189, 189);
+}
+
+.topic-card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.topic-card ul li::before {
+  content: "\2022";
+  color: #ff451f;
+  display: inline-block;
+  width: 1em;
+  margin: 0 5px;
+}
+
+/* LATEST DEALS SECTION */
+
+.latest-deals{
+  margin-top: 10px;
+}
+
+.see-all-deals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.see-all-deals a{
+  color: #ff451f;
+}
+
+.see-all-deals a:hover{
+  color: #000;
 }
 
