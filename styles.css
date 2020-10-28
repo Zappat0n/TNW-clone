@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0f0f0;
   font-family: 'PT Sans', sans-serif;
@@ -88,14 +92,10 @@ header {
 }
 
 .cover-a{
-  background: rgba(0,0,0,.25) url('assets/imgs/image-gradient.png') no-repeat;
-  background-size: 100% 100%;
-  z-index: 2;
-
+  background-image: linear-gradient(to top, #000,transparent);
   position: absolute;
   width: 100%;
   height: 100%;
-
 }
 
 .co-img1 {
@@ -158,3 +158,24 @@ header {
 
 /*  <!-- LATEST FUNDING SECTION --> */
 
+.latest-funding{
+  padding: 8px;
+  background-color: white;
+}
+
+.latest-funding a{
+  color: #ff451f;
+}
+
+.latest-funding a:hover{
+  color:black;
+}
+
+.latest-funding ul {
+  list-style: none;
+  padding: 8px;
+}
+
+.latest-funding ul li {
+  padding-bottom: 10px;
+}
