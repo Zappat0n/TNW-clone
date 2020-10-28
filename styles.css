@@ -28,7 +28,9 @@ h1 {
 header {
   background-color: #fff;
   height: 46px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 101;
 }
 
 .mob-right img {
@@ -38,7 +40,7 @@ header {
 }
 
 .mob-right .mob-menu {
-  top: 0;
+  bottom: 0;
   right:0;
 }
 
@@ -113,7 +115,9 @@ header {
 #latest-news {
   background-color: white;
   padding: 8px;
+
   /* GONNA NEED THIS IN LATER MEDIA */
+  
   /* display: grid;
   grid-template: 50px repeat(7,1fr) / 1fr; */
   
@@ -151,3 +155,6 @@ header {
   color: #ff451f;
   text-decoration: underline;
 }
+
+/*  <!-- LATEST FUNDING SECTION --> */
+
