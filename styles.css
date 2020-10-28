@@ -37,6 +37,10 @@ header {
   z-index: 101;
 }
 
+header>img {
+  position: absolute;
+}
+
 .right-side img {
   position: absolute;
   padding: 5px 8px;
@@ -64,7 +68,7 @@ header {
   display: grid;
   grid-template: repeat(3,1fr) / 1fr;
   grid-gap: 5px;
-  padding: 8px;
+  padding: 40px 8px 0 8px;
 }
 
 .main-art {
@@ -399,7 +403,7 @@ header {
   color: white;
 }
 
-.uppder-footer .powered-by {
+.powered-by {
   background-color: black;
   color: white;
   padding: 50px 0;
@@ -440,6 +444,14 @@ header {
 
   header .top-nav-bar .left ul, header .top-nav-bar .right ul{
     display: flex;
+  }
+
+  header .bottom-nav-bar .left-side ul {
+    list-style: none;
+    position: absolute;
+    left: 122px;
+    display: flex;
+    justify-content: space-between;
   }
 
   header .nav-bar {
