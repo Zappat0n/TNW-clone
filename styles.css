@@ -12,8 +12,16 @@ body {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
+
+h1 {
+  color: #ff451f;
+  font-size: 150%;
+  padding: 8px;
+}
+
 
 /*<!-- HEADER SECTION -->*/
 
@@ -40,16 +48,16 @@ header {
 }
 
 /* <!-- MAIN SECTION -->*/
-.main-section {
+#main-section {
   max-width: 100%;
   height: 700px;
   display: grid;
   grid-template: repeat(3,1fr) / 1fr;
   grid-gap: 5px;
+  padding: 8px;
 }
 
 .main-art {
-  width: 100vw;
   position: relative;
 }
 
@@ -100,3 +108,46 @@ header {
   background-image: url('assets/imgs/main-img3.png');
 }
 
+/*  <!-- LATEST NEWS SECTION --> */
+
+#latest-news {
+  background-color: white;
+  padding: 8px;
+  /* GONNA NEED THIS IN LATER MEDIA */
+  /* display: grid;
+  grid-template: 50px repeat(7,1fr) / 1fr; */
+  
+}
+
+.latest-art{
+  height: 90px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.latest-div {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.latest-img {
+  height: 100%;
+  position: absolute;
+  left: -50%;
+}
+
+.non-squre-img{
+  left:0;
+}
+
+.latest-caption {
+  padding: 10px 0 0 100px;
+}
+
+.latest-caption a:hover {
+  color: #ff451f;
+  text-decoration: underline;
+}
