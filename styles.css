@@ -200,7 +200,8 @@ header {
 
 .latest-funding .bottom-title {
   background-color: rgba(255, 68, 34, 0.08);
-  padding: 5px 92px;}
+  padding: 5px 92px;
+}
 
 .latest-funding ul {
   list-style: none;
@@ -345,16 +346,6 @@ header {
   width: 1em;
   margin: 0 5px;
 }
-
-/*    content: "\2022";
-    padding-right: 9px;
-    color: #ff451f;
-    display: inline-block;
-    width: 1em;
-    margin: 0 -12px;
-    list-style-position: inside;
-    
-    */
 
 /* LATEST DEALS SECTION */
 
