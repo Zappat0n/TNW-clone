@@ -195,12 +195,12 @@ header {
   background-color: rgb(255, 68, 34);
   color: white;
   padding-left: 95px;
+  font-size: 100%;
 }
 
 .latest-funding .bottom-title {
   background-color: rgba(255, 68, 34, 0.08);
-  padding: 1rem 95px;
-}
+  padding: 5px 92px;}
 
 .latest-funding ul {
   list-style: none;
@@ -284,6 +284,7 @@ header {
 .topic-card ul {
   font-size: 100%;
   list-style: none;
+  padding: 0 14px;
 }
 
 .uppder-footer .bottom-nav-bar a {
@@ -344,6 +345,16 @@ header {
   width: 1em;
   margin: 0 5px;
 }
+
+/*    content: "\2022";
+    padding-right: 9px;
+    color: #ff451f;
+    display: inline-block;
+    width: 1em;
+    margin: 0 -12px;
+    list-style-position: inside;
+    
+    */
 
 /* LATEST DEALS SECTION */
 
