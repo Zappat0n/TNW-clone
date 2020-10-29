@@ -209,7 +209,7 @@ header {
   padding-bottom: 10px;
 }
 
-.latest-funding .funding-card {
+.funding-card {
   position: relative;
 }
 
@@ -415,14 +415,7 @@ header {
   text-align: center;
 }
 
-.show-small,
-.show-medium,
-.show-large {
-  display: initial;
-}
-
-.hide-small,
-.hide-large {
+.hide-small {
   position: absolute;
   top: -9999px;
   left: -9999px;
@@ -432,21 +425,7 @@ header {
 
 /* MEDIUM SCREEN */
 
-@media (min-width: 768px) {
-  
-  .show-small,
-  .show-medium,
-  .show-large {
-    display: initial;
-  }
-
-  .hide-medium,
-  .hide-large { /* ALTERNATIVE SEO FRIENDLY */ 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
+@media screen and (min-width:768px) {
   /* TOP DARK NAVBAR */
 
   header {
@@ -562,49 +541,71 @@ header {
     font-size: 80%;
   }
 
-  /* LATEST NEWS */
+    /* LATEST NEWS & LATEST DEALS */
   
-  #latest-news .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .latest-art {
-    width: 32%;
-    height: auto;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-
-  .latest-div {
-    width: 100%;
-    height: 200px;
-    position: static;
-    float: none;
-  }
-
-  .latest-img {
-    width: 100%;
-    height: 100%;
-    position: static;
-  }
-
-  #latest-news .non-squre-img {
-    height: auto;
-  }
-
-  .latest-caption {
-    padding: 0;
-  }
-
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
   
+    
+    .latest-art ,
+    .latest-deal {
+      width: 33.333%;
+      height: auto;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  
+    .latest-div ,
+    .latest-deal-div {
+      width: 100%;
+      height: 200px;
+      position: static;
+      float: none;
+    }
+  
+    .latest-img ,
+    .latest-deal-img {
+      width: 100%;
+      height: 100%;
+      position: static;
+    }
+  
+    .non-squre-img {
+      height: auto;
+    }
+  
+    .latest-caption ,
+    .latest-deal-caption {
+      padding: 0;
+    }
+  
+    
+  
+    /* LATEST FUNDING SECTION */
+  
+    .funding-card {
+      display: inline-block;
+      width: 32.95%;  
+    }
+  
+    /* TOPICS SECTION */
+  
+    .topic-card {
+      display: inline-block;
+      margin: 0 1%;
+      width: 47%;
+    }
 
-  /* LATEST FUNDING SECTION */
+}
 
-  .funding-card {
-    display: inline-block;
-    margin: auto 10px;
-    width: 30%;
+@media (min-width: 768px) and (max-width:1024px) {
+
+  .hide-medium { /* ALTERNATIVE SEO FRIENDLY */ 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
 
 
@@ -612,4 +613,38 @@ header {
 
 @media (min-width: 1024px) {
 
+  .hide-large {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* HEADER */
+  .bottom-nav{
+    top: 4px;
+    left: 5px;   
+  }
+
+  .first-ul {
+    padding-left: 8px;
+  }
+
+  /* MAIN SECTION */
+
+  .cover-a-large {
+    background-image: linear-gradient(to bottom right, rgb(255 0 0),transparent,black);
+  }
+
+  .trans-logo {
+    background: url(assets/imgs/trans-logo.svg) no-repeat;
+    background-size: 59%;
+    height: 100%;
+    width: 100%;
+    z-index: 10000000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
 }
+
