@@ -37,9 +37,9 @@ header {
   z-index: 101;
 }
 
-header>img {
+/* header>img {
   position: absolute;
-}
+} */
 
 .right-side img {
   position: absolute;
@@ -68,7 +68,7 @@ header>img {
   display: grid;
   grid-template: repeat(3,1fr) / 1fr;
   grid-gap: 5px;
-  padding: 40px 8px 0 8px;
+  padding: 8px;
 }
 
 .main-art {
@@ -411,10 +411,16 @@ header>img {
 }
 
 @media (min-width: 768px) {
-  header {
+  /* header {
     top: 30px;
   }
 
+  header>img {
+    top: -29px;
+    z-index: 1000;
+    background-color: black;
+    padding: 15px 0;
+  }
   header .top-nav-bar{
     background: #131313;
     color: lightgray;
@@ -459,7 +465,15 @@ header>img {
     justify-content: space-between;
   }
 
-}
+  header .hide-medium{
+    display: none;
+  }
+  
+  /* MAIN SECTION 
+  #main-section {
+    padding: 40px 8px 0 8px;
+  }
+} */
 
 @media (min-width: 1024px) {
 
