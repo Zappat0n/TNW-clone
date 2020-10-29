@@ -6,7 +6,7 @@
 
 > This Project consists of making a clone of a New York Times article page.
 
-[screenshot](./assets/imgs/screenshot.png)
+![screenshot](./assets/imgs/screenshot.png)
 
 You can find the original project specification at: https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design
 
