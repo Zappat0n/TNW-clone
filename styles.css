@@ -568,7 +568,7 @@ header {
   /* TOPICS SECTION */
   .topic-card {
     display: inline-block;
-    margin: 0 1%;
+    margin: 0 1% 445px 1%;
     width: 47%;
   }
 }
