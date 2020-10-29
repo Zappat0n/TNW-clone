@@ -416,9 +416,7 @@ header {
 }
 
 .hide-small {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
+  display: none;
 }
 
 /* *************** MEDIA QUERY STYLES ************ */
@@ -531,7 +529,7 @@ header {
   #main-section .main-art-1 a {
     font-size: 265%;
   }
-
+/*
   .main-art-1 h3::before {
     content: "NEWS";
     position: absolute;
@@ -540,7 +538,7 @@ header {
     color: white;
     font-size: 80%;
   }
-
+*/
     /* LATEST NEWS & LATEST DEALS */
   
     .wrapper {
@@ -584,6 +582,10 @@ header {
     
   
     /* LATEST FUNDING SECTION */
+
+    .latest-funding ul li{
+      display: inline;
+    }
   
     .funding-card {
       display: inline-block;
@@ -601,22 +603,25 @@ header {
 }
 
 @media (min-width: 768px) and (max-width:1024px) {
+  
+  .hide-small {
+    display: initial;
+  }
 
   .hide-medium { /* ALTERNATIVE SEO FRIENDLY */ 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+    display: none;
   }
 
 
 }
 
 @media (min-width: 1024px) {
+  .hide-small {
+    display: initial;
+  }
 
   .hide-large {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+    display: none;
   }
 
   /* HEADER */
@@ -640,10 +645,60 @@ header {
     background-size: 59%;
     height: 100%;
     width: 100%;
-    z-index: 10000000;
+    z-index: 5;
     position: absolute;
     top: 20px;
     left: 20px;
+  }
+
+  .top-date{ /*PENDING*/
+    position: absolute;
+    width: 100px;
+    color: white;
+    top: 20px;
+    right: 100px;
+  }
+
+  /* LATEST NEWS */
+  section {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .latest-art {/*ADJUST HEIGHT */
+    width: 24%;
+  }
+
+  /* LATEST FUNDING */
+  .latest-funding .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .latest-funding ul li{
+    display: inline;
+  }
+
+
+  .funding-card {
+    display: inline-block;
+    width: 24%;  
+  }
+
+  .topic-card {
+    width: 31%;
+  }
+
+  .latest-deal {
+    width: 24%;
+  }
+
+}
+
+@media (min-width: 1210px) {
+  .show-larger {
+    display: initial;
   }
 
 }
