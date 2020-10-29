@@ -209,10 +209,14 @@ header {
   padding-bottom: 10px;
 }
 
-.latest-funding .funding-logo{
+.latest-funding .funding-card {
   position: relative;
+}
+
+.latest-funding .funding-logo{
+  position: absolute;
   left: 12px;
-  top: 80px;
+  top: 20px;
   width: 60px;
   height: 60px;
 }
@@ -559,7 +563,49 @@ header {
   }
 
   /* LATEST NEWS */
+  
+  #latest-news .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .latest-art {
+    width: 32%;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .latest-div {
+    width: 100%;
+    height: 200px;
+    position: static;
+    float: none;
+  }
+
+  .latest-img {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+
+  #latest-news .non-squre-img {
+    height: auto;
+  }
+
+  .latest-caption {
+    padding: 0;
+  }
+
+  
+
+  /* LATEST FUNDING SECTION */
+
+  .funding-card {
+    display: inline-block;
+    margin: auto 10px;
+    width: 30%;
+  }
 
 
 }
