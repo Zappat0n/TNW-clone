@@ -4,7 +4,7 @@
 
 # Project 2 :  Building with Responsive Design
 
-> This Project consists of making a clone of a New York Times article page.
+> This Project consists of making a clone of a TheNextWeb page.
 
 ![screenshot](./assets/imgs/screenshot.png)
 
