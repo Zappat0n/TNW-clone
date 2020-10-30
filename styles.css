@@ -237,6 +237,15 @@ header {
   padding: 8px;
 }
 
+.social-list li {
+  padding-top: 10px;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
 .latest-funding ul li {
   padding-bottom: 10px;
 }
@@ -431,6 +440,7 @@ header {
 
 .powered-by {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -490,15 +500,6 @@ header {
 
   .first-ul {
     padding-left: 115px;
-  }
-
-  .social-list li {
-    padding-top: 10px;
-    margin-left: 15px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #333;
   }
 
   .top-nav ul li {
@@ -563,6 +564,7 @@ header {
   }
 
   /* LATEST NEWS & LATEST DEALS */
+
   .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -620,6 +622,10 @@ header {
     grid-template: repeat(5, 780px) / repeat(2, 1fr);
     gap: 15px;
     padding: 0 15px;
+  }
+
+  .powered-by {
+    flex-direction: row;
   }
 }
 
