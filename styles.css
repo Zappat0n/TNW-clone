@@ -211,6 +211,9 @@ header {
 .latest-funding {
   padding: 8px;
   background-color: white;
+  display: grid;
+  grid-template: 160px repeat(3, 1fr) /  1fr;
+  gap: 5px;
 }
 
 .latest-funding a:hover {
@@ -271,11 +274,6 @@ header {
 }
 
 /*  <!-- TOPICS SECTION --> */
-
-.topics {
-  padding: 15px;
-  background-color: white;
-}
 
 .topics .caption h2 {
   color: white;
@@ -349,6 +347,7 @@ header {
 
 .topics .latest {
   display: flex;
+  justify-content: space-between;
   background-color: #fff4f2;
 }
 
@@ -442,6 +441,10 @@ header {
 
 .hide-small {
   display: none;
+}
+
+.clear {
+  clear: both;
 }
 
 /* *************** MEDIA QUERY STYLES ************ */
@@ -598,20 +601,25 @@ header {
 
   /* LATEST FUNDING SECTION */
 
+  .latest-funding {
+    grid-template: 100px 1fr / repeat(3, 3fr);
+  }
+
+  .latest-funding .top-menu {
+    grid-area: 1/1 / 2/4;
+  }
+
   .latest-funding ul li {
     display: inline;
   }
 
-  .funding-card {
-    display: inline-block;
-    width: 32.95%;
-  }
-
   /* TOPICS SECTION */
-  .topic-card {
-    display: inline-block;
-    margin: 0 1% 445px 1%;
-    width: 47%;
+
+  .topics {
+    display: grid;
+    grid-template: repeat(5, 780px) / repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 15px;
   }
 }
 
@@ -682,7 +690,12 @@ header {
   }
 
   /* LATEST FUNDING */
+  .latest-funding {
+    grid-template: 60px 1fr / repeat(4, 1fr);
+  }
+
   .latest-funding .top-menu {
+    grid-area: 1/1/2/5;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -694,17 +707,15 @@ header {
 
   .funding-card {
     display: inline-block;
-    width: 24%;
-    width: 23.29%;
-    margin: 0 7px;
-  }
-
-  .topic-card {
-    width: 31%;
   }
 
   .latest-deal {
     width: 24%;
+  }
+
+  /* TOPICS SECTION */
+  .topics {
+    grid-template: repeat(3, 780px) / repeat(3, 1fr);
   }
 }
 
