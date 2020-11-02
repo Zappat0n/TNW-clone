@@ -1,3 +1,5 @@
+$primColor: #ff451f;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,11 +8,11 @@
 
 html {
   scroll-behavior: smooth;
-}
 
-body {
-  background-color: #fff;
-  font-family: 'PT Sans', sans-serif;
+  body {
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+  }
 }
 
 a {
@@ -19,7 +21,7 @@ a {
 }
 
 h2 {
-  color: #ff451f;
+  color: $primColor;
   font-size: 150%;
   padding: 8px;
 }
@@ -90,7 +92,7 @@ header {
 }
 
 .see-all-deals a {
-  color: #ff451f;
+  color: $primColor;
 }
 
 .main-art h3 a,
@@ -178,7 +180,7 @@ header {
 
 .latest-funding ul a {
   font-size: 14px;
-  color: #ff451f;
+  color: $primColor;
 }
 
 .topic-card ul a {
@@ -202,7 +204,7 @@ header {
 
 .latest-caption a:hover,
 .latest-deal-caption a:hover {
-  color: #ff451f;
+  color: $primColor;
   text-decoration: underline;
 }
 
@@ -362,16 +364,16 @@ header {
 
 .topics .latest .left-side {
   padding: 15px;
-  color: #ff451f;
+  color: $primColor;
 }
 
 .topics .latest .left-side a:hover {
   text-decoration: underline;
-  text-decoration-color: #ff451f;
+  text-decoration-color: $primColor;
 }
 
 .topics .latest .left-side strong {
-  color: #ff451f;
+  color: $primColor;
 }
 
 .powered-by img {
@@ -389,7 +391,7 @@ header {
 
 .topic-card ul li::before {
   content: "\2022";
-  color: #ff451f;
+  color: $primColor;
   display: inline-block;
   width: 1em;
   margin: 0 5px;
@@ -664,7 +666,7 @@ header {
 
   /* MAIN SECTION */
   .cover-a-large {
-    background-image: linear-gradient(to bottom right, rgb(255 0 0), transparent, black);
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), transparent, black);
   }
 
   .trans-logo {
