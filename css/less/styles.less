@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #fff;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 a {
@@ -46,7 +46,6 @@ article:hover {
 }
 
 /* <!-- HEADER SECTION --> */
-
 header {
   background-color: #fff;
   height: 46px;
@@ -60,7 +59,7 @@ header {
 .right-side img {
   position: absolute;
   padding: 5px 8px;
-  border-left: 1px solid rgb(235, 235, 235);
+  border-left: 1px solid #ebebeb;
 }
 
 .menu-icon {
@@ -75,12 +74,12 @@ header {
 }
 
 /* <!-- MAIN SECTION --> */
-
 .main-section {
   max-width: 100%;
   height: 700px;
   display: grid;
-  grid-template: repeat(3, 1fr) / 1fr;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
   grid-gap: 5px;
   padding: 8px;
 }
@@ -125,19 +124,18 @@ header {
 }
 
 .co-img1 {
-  background-image: url('assets/imgs/main-img1.png');
+  background-image: url("../assets/imgs/main-img1.png");
 }
 
 .co-img2 {
-  background-image: url('assets/imgs/main-img2.png');
+  background-image: url("../assets/imgs/main-img2.png");
 }
 
 .co-img3 {
-  background-image: url('assets/imgs/main-img3.png');
+  background-image: url("../assets/imgs/main-img3.png");
 }
 
 /*  <!-- LATEST NEWS SECTION --> */
-
 .latest-news,
 .latest-deals {
   background-color: white;
@@ -207,12 +205,13 @@ header {
 }
 
 /*  <!-- LATEST FUNDING SECTION --> */
-
 .latest-funding {
   padding: 8px;
   background-color: white;
   display: grid;
-  grid-template: 160px repeat(3, 1fr) /  1fr;
+  /*grid-template: 160px repeat(3, 1fr) / auto 1fr;*/
+  grid-template-rows: 160px 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
   gap: 5px;
 }
 
@@ -221,7 +220,7 @@ header {
 }
 
 .latest-funding .funding-card h2 {
-  background-color: rgb(255, 68, 34);
+  background-color: #ff4422;
   color: white;
   padding-left: 95px;
   font-size: 100%;
@@ -283,7 +282,6 @@ header {
 }
 
 /*  <!-- TOPICS SECTION --> */
-
 .topics .caption h2 {
   color: white;
   position: relative;
@@ -310,15 +308,15 @@ header {
 }
 
 .topic-bg1 {
-  background: url("assets/imgs/main-img1.png");
+  background: url("../assets/imgs/main-img1.png");
 }
 
 .topic-bg2 {
-  background: url("assets/imgs/topics-1.png");
+  background: url("../assets/imgs/topics-1.png");
 }
 
 .topic-bg3 {
-  background: url("assets/imgs/topics-3.png");
+  background: url("../assets/imgs/topics-3.png");
 }
 
 .topics .top-image .caption {
@@ -388,7 +386,7 @@ header {
 }
 
 .topic-card ul li::before {
-  content: "\2022";
+  content: "•";
   color: #ff451f;
   display: inline-block;
   width: 1em;
@@ -396,7 +394,6 @@ header {
 }
 
 /* LATEST DEALS SECTION */
-
 .latest-deals {
   margin-top: 10px;
 }
@@ -408,7 +405,6 @@ header {
 }
 
 /* FOOTER */
-
 .footer {
   background-color: teal;
   height: 250px;
@@ -458,9 +454,7 @@ header {
 }
 
 /* *************** MEDIA QUERY STYLES ************ */
-
 /* MEDIUM SCREEN */
-
 @media screen and (min-width: 768px) {
   /* TOP DARK NAVBAR */
   header {
@@ -478,7 +472,7 @@ header {
 
   .top-nav {
     background-color: black;
-    color: rgb(146, 146, 146);
+    color: #929292;
     justify-content: space-between;
     font-size: 90%;
     position: fixed;
@@ -490,7 +484,7 @@ header {
   }
 
   .top-nav a {
-    color: rgb(146, 146, 146);
+    color: #929292;
   }
 
   .top-nav ul {
@@ -532,7 +526,7 @@ header {
     position: absolute;
     top: 0;
     left: 115px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 110%;
     letter-spacing: 1px;
     color: #aaa;
@@ -556,22 +550,23 @@ header {
   .main-section {
     padding: 40px 8px 0 8px;
     height: 500px;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    /*grid-template: auto repeat(2, 1fr) / auto repeat(3, 1fr);*/
+    grid-auto-rows: 1fr 1fr;
+    grid-auto-columns: 1fr 1fr 1fr;
   }
 
   .main-section .main-art-1 {
-    grid-area: 1 / 1 / 3 / 3;
+    grid-area: 1/1/3/3;
   }
 
   /* LATEST NEWS & LATEST DEALS */
-
   .wrapper {
     display: flex;
     flex-wrap: wrap;
   }
 
   .latest-art,
-  .latest-deal {
+.latest-deal {
     width: 33.333%;
     height: auto;
     padding: 8px;
@@ -579,14 +574,14 @@ header {
   }
 
   .latest-div,
-  .latest-deal-div {
+.latest-deal-div {
     width: 100%;
     height: 180px;
     float: none;
   }
 
   .latest-img,
-  .latest-deal-img {
+.latest-deal-img {
     height: 100%;
     position: static;
   }
@@ -597,18 +592,17 @@ header {
   }
 
   .latest-caption,
-  .latest-deal-caption {
+.latest-deal-caption {
     padding: 13px 0;
   }
 
   /* LATEST FUNDING SECTION */
-
   .latest-funding {
-    grid-template: 100px 1fr / repeat(3, 3fr);
+    grid-template: 100px 1fr / auto repeat(3, 3fr);
   }
 
   .latest-funding .top-menu {
-    grid-area: 1/1 / 2/4;
+    grid-area: 1/1/2/4;
   }
 
   .latest-funding ul li {
@@ -616,10 +610,11 @@ header {
   }
 
   /* TOPICS SECTION */
-
   .topics {
     display: grid;
-    grid-template: repeat(5, 780px) / repeat(2, 1fr);
+    /*grid-template: auto repeat(5, 780px) / auto repeat(2, 1fr);*/
+    grid-auto-rows: repeat(5, 780px);
+    grid-auto-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 0 15px;
   }
@@ -628,7 +623,6 @@ header {
     flex-direction: row;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .hide-small {
     display: inline-flex;
@@ -638,7 +632,6 @@ header {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
   .hide-small {
     display: inline-flex;
@@ -664,7 +657,7 @@ header {
 
   /* MAIN SECTION */
   .cover-a-large {
-    background-image: linear-gradient(to bottom right, rgb(255 0 0), transparent, black);
+    background-image: linear-gradient(to bottom right, red, transparent, black);
   }
 
   .trans-logo {
@@ -697,7 +690,9 @@ header {
 
   /* LATEST FUNDING */
   .latest-funding {
-    grid-template: 60px 1fr / repeat(4, 1fr);
+    grid-template-rows: 60px 1fr;
+    grid-auto-columns: repeat(4, 1fr);
+    /*grid-template: 60px 1fr / auto repeat(4, 1fr);*/
   }
 
   .latest-funding .top-menu {
@@ -721,10 +716,11 @@ header {
 
   /* TOPICS SECTION */
   .topics {
-    grid-template: repeat(3, 780px) / repeat(3, 1fr);
+    grid-auto-rows: repeat(3, 780px);
+    grid-auto-columns: repeat(3, 1fr);
+    /*grid-template: auto repeat(3, 780px) / auto repeat(3, 1fr);*/
   }
 }
-
 @media (min-width: 1212px) {
   .show-larger {
     display: initial;
